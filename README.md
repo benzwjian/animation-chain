@@ -1,6 +1,13 @@
 # animation-chain
 Add attributes to your HTML to animate DOM elements.
 
+## Prerequisites
+### Add scripts
+```html
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="animation-chain.js"></script>
+```
+
 ## Usage
 ### Basic
 Add `data-ani="fadeIn"` attribute to your target animated element, where `fadeIn` is CSS class that contains animation effect.

@@ -39,6 +39,14 @@ In responsive page design, you can set animation for mobile device.
 ```
 For this case, the element will animate with `fadeIn` on desktop browsers, otherwise `fadeUp` on mobile browsers.
 
+### Use with Animate.css
+[Animate.css](https://daneden.github.io/animate.css/) is a great animation library without writing css by youself.
+```html
+<div>
+  <div class="animated" data-ani="fadeIn">I will fade in page first!</div>
+</div>
+```
+
 ## API
 ### .animate()
 Start the animation. If `.animate()` is called again, the animation will restart.

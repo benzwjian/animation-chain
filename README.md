@@ -54,7 +54,7 @@ Set function to be executed before animation of a element starts. For example, y
   <div data-ani="fadeIn" data-ani-order="1">My turn!</div>
 </div>
 ```
-You want to log message before node1(i.e. data-ani-order="1"), starts animation:
+You want to log message before node1(i.e. data-ani-order="1") starts animation:
 ```javascript
 var aniChain = new AnimationChain($('#dom'));
 aniChain.setNodeOnBeforeStart(1, function() {
@@ -71,3 +71,12 @@ aniChain.setNodeOnBeforeStart(1, function(resolve, reject) {
    }, 1000);
 });
 ```
+
+### .setNodeOnEnded(order: Integer, fn: Function)
+Set function to be executed after animation of a element finished. It also supports to set async function.
+
+### .setOnBeforeStart(fn: Function)
+Set function to be executed before whole animation starts. It also supports to set async function.
+
+### .setOnEnded(fn: Function)
+Set function to be executed after whole animation finished. It also supports to set async function.
